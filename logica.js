@@ -68,22 +68,28 @@ function compuImgAleatoria(){
 
 if(random == 1){
     imgCompu.src = "piedra.png"
+    imgCompu.alt = "piedra"
 }else if(random == 2){
     imgCompu.src = "papel.png"
+    imgCompu.alt = "papel"
 }else if(random == 3){
     imgCompu.src = "tijera.png"
+    imgCompu.alt = "tijera"
 }
 
 }
 
 function ganador(cajaImg){
-    let imgCompu = document.getElementById("imgCompu").src
-    let imgUsuario = cajaImg.src
+    let imgCompu = document.getElementById("imgCompu").alt
+    let imgUsuario = cajaImg.alt
+
         if((imgUsuario == imgCompu)){//EMPATES
             marcador.innerHTML = "Empate"
-        }else if (((imgUsuario == imgPiedra) && (imgCompu == imgTijera)) || ((imgUsuario == imgPapel) && (imgCompu == imgPiedra))||((imgUsuario == imgTijera) && (imgCompu == imgPapel))){//gana USER
+
+        }else if (((imgUsuario == "piedra") && (imgCompu == "tijera")) || ((imgUsuario == "papel") && (imgCompu == "piedra"))||((imgUsuario == "tijera") && (imgCompu == "papel"))){//gana USER
             marcador.innerHTML = "Has ganado!:D"
-        }else if (((imgCompu == imgPiedra) && (imgUsuario == imgTijera)) || ((imgCompu == imgPapel) && (imgUsuario == imgPiedra))||((imgCompu == imgTijera) && (imgUsuario == imgPapel))){//gana CPU
+
+        }else if (((imgCompu == "piedra") && (imgUsuario == "tijera")) || ((imgCompu == "papel") && (imgUsuario == "piedra"))||((imgCompu == "tijera") && (imgUsuario == "papel"))){//gana CPU
             marcador.innerHTML = "Has perdido:("
         
     }
