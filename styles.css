@@ -1,0 +1,49 @@
+.cajasUser{
+    width: 26rem;
+    height: 22rem;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(255, 153, 28);
+    text-align: center;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   /*outline: 5em,0em,5em,0em;*/
+}
+.cajasCompu{
+    width: 26rem;
+    height: 22rem;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(255, 153, 28);
+    display: inline-flex;
+    align-items: center;
+   justify-content: center;
+}
+.caja{
+    width: 29%;
+    height: 36%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    display: inline-block;
+    text-align: center;
+}
+
+.img{
+    width: 90%;
+    height: 90%;
+}
+
+#marcador{
+    width: 26rem;
+    height: auto;
+    border-style: solid;
+    border-width: 2px;
+    
+    display: block;
+    background-color: rgb(255, 153, 28);
+    color: bisque;
+    text-align: center;
+    font-size: 2em;
+}
